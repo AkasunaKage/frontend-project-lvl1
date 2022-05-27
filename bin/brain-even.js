@@ -20,12 +20,12 @@ const evenGame = () => {
     if (check1 === true || check2 === true) {
       console.log('Correct!');
     } else {
-      const opposite = userAnswer ? 'no' : 'yes';
-      const wrong = `"${userAnswer}" is wrong answer ;(. Correct answer was '${opposite}'. Let's try again, ${userName}!`;
+      const opposite = (userAnswer === 'yes' ? 'no' : 'yes');
+      const wrong = console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was '${opposite}'. Let's try again, ${userName}!`);
       return wrong;
     }
   }
-  console.log(`Congratulations, ${userName}!`);
+  return console.log(`Congratulations, ${userName}!`);
 };
 
 evenGame();
