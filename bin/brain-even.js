@@ -11,7 +11,7 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 const evenGame = () => {
   for (let i = 0; i < 3; i += 1) {
     const number = getRandomInt(100);
-    console.log(`Question: ${getRandomInt(100)}`);
+    console.log('Question:', number);
     const userAnswer = readlineSync.question('Your answer: ');
 
     const check1 = (number % 2 === 0) && (userAnswer === 'yes');
@@ -28,4 +28,4 @@ const evenGame = () => {
   console.log(`Congratulations, ${userName}!`);
 };
 
-console.log(evenGame());
+evenGame();
