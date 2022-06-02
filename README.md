@@ -6,3 +6,5 @@
 ![example workflow](https://github.com/AkasunaKage/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)
 
 https://asciinema.org/a/JGtHI4fYyUGaNn34SOP8WPzY7
+
+https://asciinema.org/a/jjtvninlymWhZhPsRHNyhAqQd
