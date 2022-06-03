@@ -21,7 +21,7 @@ const evenGame = () => {
       console.log('Correct!');
     } else {
       const opposite = (userAnswer === 'yes' ? 'no' : 'yes');
-      const wrong = console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was '${opposite}'. Let's try again, ${userName}!`);
+      const wrong = console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was '${opposite}'.\nLet's try again, ${userName}!`);
       return wrong;
     }
   }

@@ -36,7 +36,7 @@ const calcGame = () => {
     if (userAnswer === correctAnswer) {
       console.log('Correct!');
     } else {
-      const wrong = console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was '${correctAnswer}'. Let's try again, ${userName}!`);
+      const wrong = console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
       return wrong;
     }
   }
