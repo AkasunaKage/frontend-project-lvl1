@@ -27,11 +27,12 @@ const getQuestionAnswer = () => {
 
   const correctAnswer = (calc(number, sign, number2)).toString();
 
-  const array = [userQuestion, correctAnswer];
-
-  const [a, b] = array;
-
-  return array;
+  return [userQuestion, correctAnswer];
 };
+
+getQuestionAnswer();
+
+const array = [userQuestion, correctAnswer];
+const [a, b] = array;
 
 gamesLogic(rule, userQuestion, correctAnswer);
