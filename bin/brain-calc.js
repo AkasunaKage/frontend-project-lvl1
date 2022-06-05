@@ -34,6 +34,4 @@ const getQuestionAnswer = () => {
   return array;
 };
 
-export { rule, calc, getQuestionAnswer };
-
-gamesLogic();
+gamesLogic(rule, userQuestion, correctAnswer);
