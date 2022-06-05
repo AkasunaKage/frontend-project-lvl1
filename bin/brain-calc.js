@@ -1,7 +1,5 @@
 import gamesLogic from '../src/index.js';
 
-gamesLogic();
-
 const getRandomInt = (max) => Math.floor(Math.random() * max);
 
 const rule = 'What is the result of the expression?';
@@ -25,11 +23,17 @@ const getQuestionAnswer = () => {
   const signs = ['+', '-', '*'];
   const sign = signs[getRandomInt(3)];
 
-  const question = `${number} ${sign} ${number2}`;
+  const userQuestion = `${number} ${sign} ${number2}`;
 
   const correctAnswer = (calc(number, sign, number2)).toString();
 
-  return [question, correctAnswer];
+  const array = [userQuestion, correctAnswer];
+
+  const [a, b] = array;
+
+  return array;
 };
 
 export { rule, calc, getQuestionAnswer };
+
+gamesLogic();
