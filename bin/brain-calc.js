@@ -30,7 +30,4 @@ const getQuestionAnswer = () => {
   return [userQuestion, correctAnswer];
 };
 
-const final = getQuestionAnswer();
-const [userQuestion, correctAnswer] = final;
-
-gamesLogic(rule, userQuestion, correctAnswer);
+gamesLogic(rule, getQuestionAnswer);
