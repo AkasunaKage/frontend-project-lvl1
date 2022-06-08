@@ -15,10 +15,10 @@ const generateProgression = (number, progresInt, progresLength) => {
 const getQuestionAnswer = () => {
   const number = getRandomInt(5, 10);
   const progresInt = getRandomInt(5, 9);
-  const progresLength = getRandomInt(10);
+  const progresLength = getRandomInt(5, 15);
   const progression = generateProgression(number, progresInt, progresLength);
   const index = getRandomInt(2, progresLength);
-  const correctAnswer = String(progression[index]);
+  const correctAnswer = progression[index].toString();
   progression[index] = '..';
   const userQuestion = progression.join(' ');
 
