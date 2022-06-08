@@ -1,6 +1,6 @@
 import gamesLogic from '../index.js';
 
-const getRandomInt = (max) => Math.floor(Math.random() * max);
+import getRandomInt from '../randomFunction.js';
 
 const rule = 'What is the result of the expression?';
 
@@ -17,11 +17,11 @@ const calc = (number, sign, number2) => {
 };
 
 const getQuestionAnswer = () => {
-  const number = getRandomInt(100);
-  const number2 = getRandomInt(100);
+  const number = getRandomInt(0, 100);
+  const number2 = getRandomInt(0, 100);
 
   const signs = ['+', '-', '*'];
-  const sign = signs[getRandomInt(3)];
+  const sign = signs[getRandomInt(1, 3)];
 
   const userQuestion = `${number} ${sign} ${number2}`;
 

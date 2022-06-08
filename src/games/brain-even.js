@@ -1,31 +1,15 @@
-import readlineSync from 'readline-sync';
+import gamesLogic from '../index.js';
 
-import userName from '../src/cli.js';
+import getRandomInt from '../randomFunction.js';
 
-console.log(`Hello ${userName}!`);
+const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const getRandomInt = (max) => Math.floor(Math.random() * max);
+const evenNumber = (num) => num % 2 === 0;
 
-console.log('Answer "yes" if the number is even, otherwise answer "no".');
-
-const evenGame = () => {
-  for (let i = 0; i < 3; i += 1) {
-    const number = getRandomInt(100);
-    console.log('Question:', number);
-    const userAnswer = readlineSync.question('Your answer: ');
-
-    const check1 = (number % 2 === 0) && (userAnswer === 'yes');
-    const check2 = (number % 2 !== 0) && (userAnswer === 'no');
-
-    if (check1 === true || check2 === true) {
-      console.log('Correct!');
-    } else {
-      const opposite = (userAnswer === 'yes' ? 'no' : 'yes');
-      const wrong = console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was '${opposite}'.\nLet's try again, ${userName}!`);
-      return wrong;
-    }
-  }
-  return console.log(`Congratulations, ${userName}!`);
+const getQuestionAnswer = () => {
+  const userQuestion = getRandomInt(0, 100) + 1;
+  const correctAnswer = evenNumber(userQuestion) ? 'yes' : 'no';
+  return [userQuestion, correctAnswer];
 };
 
-evenGame();
+gamesLogic(rule, getQuestionAnswer);

@@ -1,6 +1,6 @@
 import gamesLogic from '../index.js';
 
-const getRandomInt = (max) => Math.floor(Math.random() * max);
+import getRandomInt from '../randomFunction.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
 
@@ -12,8 +12,8 @@ const findGcd = (number1, number2) => {
 };
 
 const getQuestionAnswer = () => {
-  const number = getRandomInt(100);
-  const number2 = getRandomInt(100);
+  const number = getRandomInt(0, 100);
+  const number2 = getRandomInt(0, 100);
 
   const userQuestion = `${number} ${number2}`;
 
