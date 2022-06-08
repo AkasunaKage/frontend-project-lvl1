@@ -9,7 +9,8 @@
     "brain-even": "src/games/brain-even.js",
     "brain-calc": "src/games/brain-calc.js",
     "brain-gsd": "src/games/brain-gsd.js",
-    "brain-progress": "src/games/brain-progress.js"
+    "brain-progress": "src/games/brain-progress.js",
+    "brain-prime": "src/games/brain-prime.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
