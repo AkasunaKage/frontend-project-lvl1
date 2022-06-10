@@ -2,6 +2,8 @@ import getRandomInt from '../randomFunction.js';
 
 const rule = 'What is the result of the expression?';
 
+const signs = ['+', '-', '*'];
+
 const calc = (number, sign, number2) => {
   let result;
   if (sign === '+') {
@@ -18,8 +20,7 @@ const getQuestionAnswer = () => {
   const number = getRandomInt(0, 100);
   const number2 = getRandomInt(0, 100);
 
-  const signs = ['+', '-', '*'];
-  const sign = signs[getRandomInt(1, 3)];
+  const sign = signs[getRandomInt(0, 2)];
 
   const userQuestion = `${number} ${sign} ${number2}`;
 
