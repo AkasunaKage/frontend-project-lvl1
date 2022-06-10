@@ -5,31 +5,34 @@
 
 Simple arithmetic games for your brains
 
-## Game examples
+# Game examples
 
-# Brain-even:
+## Brain-even:
 
 [![asciicast](https://asciinema.org/a/GMy5ROL55cG9QYA2mqFm0h7So.svg)](https://asciinema.org/a/GMy5ROL55cG9QYA2mqFm0h7So)
 
-# Brain-calc:
+## Brain-calc:
 
 [![asciicast](https://asciinema.org/a/feu764fQnpWGEFbACafsCo26J.svg)](https://asciinema.org/a/feu764fQnpWGEFbACafsCo26J)
 
-# Brain-gsd:
+## Brain-gsd:
 
 [![asciicast](https://asciinema.org/a/kOPYaKS073VBDWsd2Nta7ntKn.svg)](https://asciinema.org/a/kOPYaKS073VBDWsd2Nta7ntKn)
 
-# Brain-progression:
+## Brain-progression:
 
 [![asciicast](https://asciinema.org/a/JbxzRqH4j3aOHkDFXn5Ql3in5.svg)](https://asciinema.org/a/JbxzRqH4j3aOHkDFXn5Ql3in5)
 
-# Brain-prime:
+## Brain-prime:
 
 [![asciicast](https://asciinema.org/a/O2rRCdCGwebJvkvT3b1s8QJms.svg)](https://asciinema.org/a/O2rRCdCGwebJvkvT3b1s8QJms)
 
-## How to install
+# How to install
 
-Install Node.js (версия не ниже 16.8.0)
+Install Node.js (min v.16.8.0)
+
 Clone the repository and use "make install" command
+
 Use "npm link" command
+
 Use "make <game name>" to start
