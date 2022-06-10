@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import { rule, getQuestionAnswer } from '../src/games/brain-gsd.js';
 import gamesLogic from '../src/index.js';
 
