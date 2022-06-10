@@ -1,5 +1,3 @@
-import gamesLogic from '../index.js';
-
 import getRandomInt from '../randomFunction.js';
 
 const rule = 'Find the greatest common divisor of given numbers.';
@@ -22,4 +20,4 @@ const getQuestionAnswer = () => {
   return [userQuestion, correctAnswer];
 };
 
-gamesLogic(rule, getQuestionAnswer);
+export { rule, getQuestionAnswer };

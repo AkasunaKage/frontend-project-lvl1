@@ -1,5 +1,3 @@
-import gamesLogic from '../index.js';
-
 import getRandomInt from '../randomFunction.js';
 
 const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
@@ -12,4 +10,4 @@ const getQuestionAnswer = () => {
   return [userQuestion, correctAnswer];
 };
 
-gamesLogic(rule, getQuestionAnswer);
+export { rule, getQuestionAnswer };

@@ -1,5 +1,3 @@
-import gamesLogic from '../index.js';
-
 import getRandomInt from '../randomFunction.js';
 
 const rule = 'What is the result of the expression?';
@@ -30,4 +28,4 @@ const getQuestionAnswer = () => {
   return [userQuestion, correctAnswer];
 };
 
-gamesLogic(rule, getQuestionAnswer);
+export { rule, getQuestionAnswer };

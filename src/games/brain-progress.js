@@ -1,5 +1,3 @@
-import gamesLogic from '../index.js';
-
 import getRandomInt from '../randomFunction.js';
 
 const rule = 'What number is missing in the progression?';
@@ -25,4 +23,4 @@ const getQuestionAnswer = () => {
   return [userQuestion, correctAnswer];
 };
 
-gamesLogic(rule, getQuestionAnswer);
+export { rule, getQuestionAnswer };

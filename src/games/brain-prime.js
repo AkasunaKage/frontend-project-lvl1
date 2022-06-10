@@ -1,5 +1,3 @@
-import gamesLogic from '../index.js';
-
 import getRandomInt from '../randomFunction.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
@@ -22,4 +20,4 @@ const getQuestionAnswer = () => {
   return [userQuestion, correctAnswer];
 };
 
-gamesLogic(rule, getQuestionAnswer);
+export { rule, getQuestionAnswer };
