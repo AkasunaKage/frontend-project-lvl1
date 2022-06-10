@@ -23,7 +23,9 @@ const getQuestionAnswer = () => {
 
   const userQuestion = `${number} ${sign} ${number2}`;
 
-  const correctAnswer = (calc(number, sign, number2)).toString();
+  const answer = calc(number, sign, number2);
+
+  const correctAnswer = String(answer);
 
   return [userQuestion, correctAnswer];
 };
