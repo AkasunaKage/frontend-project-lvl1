@@ -1,6 +1,6 @@
-import gamesLogic from '../index.js';
+import gamesLogic from '../src/index.js';
 
-import getRandomInt from '../randomFunction.js';
+import getRandomInt from '../src/randomFunction.js';
 
 const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
