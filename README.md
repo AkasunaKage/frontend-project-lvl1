@@ -1,14 +1,35 @@
-### Hexlet tests and linter status:
-[![Actions Status](https://github.com/AkasunaKage/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AkasunaKage/frontend-project-lvl1/actions)
+## Hexlet tests and linter status:
+[![Actions Status](https://github.com/AkasunaKage/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/AkasunaKage/frontend-project-lvl1/actions) [![Maintainability](https://api.codeclimate.com/v1/badges/928c5e28edbcd8a24b35/maintainability)](https://codeclimate.com/github/AkasunaKage/frontend-project-lvl1/maintainability) ![example workflow](https://github.com/AkasunaKage/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)
 
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+# Brain-Games
 
-![example workflow](https://github.com/AkasunaKage/frontend-project-lvl1/actions/workflows/linter.yml/badge.svg)
+Simple arithmetic games for your brains
 
-https://asciinema.org/a/JGtHI4fYyUGaNn34SOP8WPzY7
+## Game examples
 
-https://asciinema.org/a/jjtvninlymWhZhPsRHNyhAqQd
+# Brain-even:
 
-https://asciinema.org/a/JbxzRqH4j3aOHkDFXn5Ql3in5
+[![asciicast](https://asciinema.org/a/GMy5ROL55cG9QYA2mqFm0h7So.svg)](https://asciinema.org/a/GMy5ROL55cG9QYA2mqFm0h7So)
 
-https://asciinema.org/a/O2rRCdCGwebJvkvT3b1s8QJms
+# Brain-calc:
+
+[![asciicast](https://asciinema.org/a/feu764fQnpWGEFbACafsCo26J.svg)](https://asciinema.org/a/feu764fQnpWGEFbACafsCo26J)
+
+# Brain-gsd:
+
+[![asciicast](https://asciinema.org/a/kOPYaKS073VBDWsd2Nta7ntKn.svg)](https://asciinema.org/a/kOPYaKS073VBDWsd2Nta7ntKn)
+
+# Brain-progression:
+
+[![asciicast](https://asciinema.org/a/JbxzRqH4j3aOHkDFXn5Ql3in5.svg)](https://asciinema.org/a/JbxzRqH4j3aOHkDFXn5Ql3in5)
+
+# Brain-prime:
+
+[![asciicast](https://asciinema.org/a/O2rRCdCGwebJvkvT3b1s8QJms.svg)](https://asciinema.org/a/O2rRCdCGwebJvkvT3b1s8QJms)
+
+## How to install
+
+Install Node.js (версия не ниже 16.8.0)
+Clone the repository and use "make install" command
+Use "npm link" command
+Use "make <game name>" to start
