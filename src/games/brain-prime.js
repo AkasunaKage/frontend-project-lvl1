@@ -6,10 +6,12 @@ const getPrime = (number) => {
   if (number < 2) {
     return false;
   }
-  for (let i = 2; i <= number / 2; i += 1) {
+  let i = 2;
+  while (i < number / 2) {
     if (number % i === 0) {
       return false;
     }
+    i += 1;
   }
   return true;
 };
