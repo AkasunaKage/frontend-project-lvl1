@@ -15,9 +15,9 @@ Simple arithmetic games for your brains
 
 [![asciicast](https://asciinema.org/a/feu764fQnpWGEFbACafsCo26J.svg)](https://asciinema.org/a/feu764fQnpWGEFbACafsCo26J)
 
-## Brain-gsd:
+## Brain-gcd:
 
-[![asciicast](https://asciinema.org/a/kOPYaKS073VBDWsd2Nta7ntKn.svg)](https://asciinema.org/a/kOPYaKS073VBDWsd2Nta7ntKn)
+[![asciicast](https://asciinema.org/a/4g4WngdYTAkK2r30BytWqftWx.svg)](https://asciinema.org/a/4g4WngdYTAkK2r30BytWqftWx)
 
 ## Brain-progression:
 
