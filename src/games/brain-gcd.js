@@ -1,6 +1,6 @@
 import getRandomInt from '../randomFunction.js';
 
-const rule = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const findGcd = (number1, number2) => {
   if (number2 === 0) {
@@ -9,7 +9,7 @@ const findGcd = (number1, number2) => {
   return findGcd(number2, number1 % number2);
 };
 
-const getQuestionAnswer = () => {
+const generateRound = () => {
   const number = getRandomInt(0, 100);
   const number2 = getRandomInt(0, 100);
 
@@ -20,4 +20,4 @@ const getQuestionAnswer = () => {
   return [userQuestion, correctAnswer];
 };
 
-export { rule, getQuestionAnswer };
+export { description, generateRound };

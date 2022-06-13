@@ -1,6 +1,6 @@
 import getRandomInt from '../randomFunction.js';
 
-const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const getPrime = (number) => {
   if (number < 2) {
@@ -16,10 +16,10 @@ const getPrime = (number) => {
   return true;
 };
 
-const getQuestionAnswer = () => {
+const generateRound = () => {
   const userQuestion = getRandomInt(2, 100);
   const correctAnswer = getPrime(userQuestion) ? 'yes' : 'no';
   return [userQuestion, correctAnswer];
 };
 
-export { rule, getQuestionAnswer };
+export { description, generateRound };

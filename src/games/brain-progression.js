@@ -1,6 +1,6 @@
 import getRandomInt from '../randomFunction.js';
 
-const rule = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const generateProgression = (number, progresInt, progresLength) => {
   const progressionArray = [];
@@ -10,7 +10,7 @@ const generateProgression = (number, progresInt, progresLength) => {
   return progressionArray;
 };
 
-const getQuestionAnswer = () => {
+const generateRound = () => {
   const number = getRandomInt(5, 10);
   const progresInt = getRandomInt(5, 9);
   const progresLength = getRandomInt(5, 15);
@@ -23,4 +23,4 @@ const getQuestionAnswer = () => {
   return [userQuestion, correctAnswer];
 };
 
-export { rule, getQuestionAnswer };
+export { description, generateRound };

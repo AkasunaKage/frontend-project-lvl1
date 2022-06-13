@@ -33,6 +33,4 @@ Install Node.js (min v.16.8.0)
 
 Clone the repository and use `make install` command
 
-Use `npm link` command
-
 Use `make <game name>` to start

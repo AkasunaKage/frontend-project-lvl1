@@ -1,6 +1,6 @@
 import getRandomInt from '../randomFunction.js';
 
-const rule = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const signs = ['+', '-', '*'];
 
@@ -16,7 +16,7 @@ const calc = (number, sign, number2) => {
   return result;
 };
 
-const getQuestionAnswer = () => {
+const generateRound = () => {
   const number = getRandomInt(0, 100);
   const number2 = getRandomInt(0, 100);
 
@@ -31,4 +31,4 @@ const getQuestionAnswer = () => {
   return [userQuestion, correctAnswer];
 };
 
-export { rule, getQuestionAnswer };
+export { description, generateRound };
