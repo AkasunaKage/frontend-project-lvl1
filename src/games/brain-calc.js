@@ -1,30 +1,31 @@
-import getRandomInt from '../randomFunction.js';
+import getRandomInt from '../helpers.js';
 
 const description = 'What is the result of the expression?';
 
-const signs = ['+', '-', '*'];
+const operators = ['+', '-', '*'];
 
-const calc = (number, sign, number2) => {
-  let result;
-  if (sign === '+') {
-    result = (number + number2);
-  } else if (sign === '-') {
-    result = (number - number2);
-  } else if (sign === '*') {
-    result = (number * number2);
+// eslint-disable-next-line consistent-return
+const calc = (number, operator, number2) => {
+  if (operator === '+') {
+    return number + number2;
   }
-  return result;
+  if (operator === '-') {
+    return number - number2;
+  }
+  if (operator === '*') {
+    return number * number2;
+  }
 };
 
 const generateRound = () => {
   const number = getRandomInt(0, 100);
   const number2 = getRandomInt(0, 100);
 
-  const sign = signs[getRandomInt(0, 2)];
+  const operator = operators[getRandomInt(0, operators.length - 1)];
 
-  const userQuestion = `${number} ${sign} ${number2}`;
+  const userQuestion = `${number} ${operator} ${number2}`;
 
-  const answer = calc(number, sign, number2);
+  const answer = calc(number, operator, number2);
 
   const correctAnswer = String(answer);
 

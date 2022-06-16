@@ -1,8 +1,8 @@
-import getRandomInt from '../randomFunction.js';
+import getRandomInt from '../helpers.js';
 
 const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
-const getPrime = (number) => {
+const isPrime = (number) => {
   if (number < 2) {
     return false;
   }
@@ -18,7 +18,7 @@ const getPrime = (number) => {
 
 const generateRound = () => {
   const userQuestion = getRandomInt(2, 100);
-  const correctAnswer = getPrime(userQuestion) ? 'yes' : 'no';
+  const correctAnswer = isPrime(userQuestion) ? 'yes' : 'no';
   return [userQuestion, correctAnswer];
 };
 
