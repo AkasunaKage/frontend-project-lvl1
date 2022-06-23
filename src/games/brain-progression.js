@@ -16,7 +16,7 @@ const generateRound = () => {
   const length = getRandomInt(5, 15);
   const progression = createProgression(first, length, step);
   const index = getRandomInt(2, length - 1);
-  const correctAnswer = String(progression[index]);
+  const correctAnswer = progression.splice(index, 1, '..').toString();
   progression.splice(index, 1, '..');
   const userQuestion = progression.join(' ');
 
